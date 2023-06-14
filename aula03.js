@@ -33,7 +33,7 @@ const lista = [
     },
 ]
 
-const  filtraPessoa = (pessoa) => pessoa.nome === 'Adriano';
+const  filtraPessoa = (pessoa) => pessoa.nome === 'Adriana';
 
 const listaFiltrada = lista.filter(filtraPessoa);
 
