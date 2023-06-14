@@ -33,6 +33,8 @@ const lista = [
     },
 ]
 
-const novaPessoa = lista.find((pessoa) => pessoa.idade > 30);
+const buscarPessoa = (pessoa) => pessoa.nome === 'Adriano'
+
+const novaPessoa = lista.find(buscarPessoa);
 
 console.log(novaPessoa);
