@@ -1,7 +1,8 @@
 const lista = [
     {
         nome:'Jose',
-        idade: 13
+        idade: 13,
+        exibir: 'true'
     },
     {
         nome:'Luana',
@@ -34,11 +35,13 @@ const lista = [
 ]
 
 lista.sort((a,b) =>{
-    if (a.idade < b.idade){
+    if (a.nome.toUpperCase() < b.nome.toUpperCase()){
         return -1;
     }
-    if (a.idade > b.idade){
+    if (a.nome.toUpperCase() > b.nome.toUpperCase()){
         return 1;
     }
-    return 0;
+    return 0; 
 })
+
+console.log(lista)
